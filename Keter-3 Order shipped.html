@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="color-scheme: light; supported-color-schemes: light; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0 auto; padding: 0; height: 100%; width: 100%;">
+
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>Order shipped!</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  u~div .email-container {
+    min-width: 320px !important;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  u~div .email-container {
+    min-width: 375px !important;
+  }
+}
+@media only screen and (min-device-width: 414px) {
+  u~div .email-container {
+    min-width: 414px !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hidedesktop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hidemobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mobilepaddingtop {
+    padding-top: 16px;
+  }
+}
+</style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+.button-td-primary:hover,
+.button-a-primary:hover {
+  background: #555555 !important;
+  border-color: #555555 !important;
+}
+@media screen and (max-width: 600px) {
+  .email-container {
+    width: 100% !important;
+    margin: auto !important;
+  }
+
+  .stack-column,
+.stack-column-center {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    direction: left !important;
+  }
+
+  .stack-column-center {
+    text-align: left !important;
+  }
+
+  .center-on-narrow {
+    text-align: left !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+
+  table.center-on-narrow {
+    display: inline-block !important;
+  }
+
+  .email-container p {
+    font-size: 17px !important;
+  }
+}
+</style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; background-color: #ffffff; margin: 0 auto; height: 100%; width: 100%; padding: 0;">
+    <center role="article" aria-roledescription="email" lang="en" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 100%; background-color: #ffffff; padding: 0px; border: 0px;">
+        <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Email Body : BEGIN -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;" class="email-container">
+            <!-- Email Header : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: center; background-color: #004E4A; width: 600px; height: 12px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="600" height="12" align="center" bgcolor="#004E4A">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">&nbsp;</p>
+                </td>
+            </tr>
+            <!-- Email Header : END -->
+
+            <!-- Block 1 : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; border-bottom: 1px solid #f0f0f5; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="30%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 19px; padding-bottom: 20px; padding-left: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <img src="https://i.ibb.co/HdPKrwM/Logo1.png" width="100px" height="auto" alt="Logo" border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 100px; background: #ffffff;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="70%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; font-family: Trebuchet MS, sans-serif; font-size: 12px; line-height: 19px; color: #555555; padding: 0px; padding-top: 29px; padding-right: 40px; padding-bottom: 30px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"> <a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none; color: #706A92;">Explore
+                                                    Spaces</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none; color: #706A92;">Balcony Furniture</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Block 1 : END -->
+
+            <!-- Block 2 : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; font-family: Trebuchet MS, sans-serif; font-size: 12px; line-height: 16px; color: #004E4A; padding-left: 45px; padding-top: 41px; padding-bottom: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #004E4A; font-family: Trebuchet MS, sans-serif;">View
+                                        email in browser</a></p>
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; font-family: Trebuchet MS, sans-serif; font-size: 36px; line-height: 44px; color: #29142E; padding-left: 45px; padding-top: 0px; padding-bottom: 34px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"><strong style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 36px;">Your order is shipped</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding-left: 45px; padding-top: 0px; padding-bottom: 28px; padding-right: 200px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">Your KETER products will be soon delivered to your doorstep.</p>
+                            </td>
+                        </tr>
+                        <!-- 2 Even Columns : BEGIN -->
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #F2F2F7; padding-left: 45px; padding-top: 24px; padding-bottom: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#F2F2F7">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <!-- Column : BEGIN -->
+                                        <th valign="top" width="50%" class="stack-column-center" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-weight: normal;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                                <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 0px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="center-on-narrow" align="left">
+                                                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">Track & trace number:
+                                                        </p>
+                                                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; color: #29142E; text-decoration: underline; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px;">3SYKHS802515301</b>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th>
+                                        <!-- Column : END -->
+                                        <!-- Column : BEGIN -->
+                                        <th valign="top" width="50%" class="stack-column-center" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-weight: normal;">
+                                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                                <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                    <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 0px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="center-on-narrow" align="left">
+                                                        <p class="mobilepaddingtop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">Order number:
+                                                        </p>
+                                                        <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px;">050017900</b>
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </th>
+                                        <!-- Column : END -->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- 2 Even Columns : END -->
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <!-- Button : BEGIN -->
+                                <table align="left" role="presentation" cellspacing="0" cellpadding="0" border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; padding-left: 45px; padding-bottom: 30px; padding-top: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                            <div style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                <!--[if mso]>
+                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:52px;v-text-anchor:middle;width:257px;" arcsize="97%" stroke="f" fillcolor="#004E4A">
+                                                  <w:anchorlock/>
+                                                  <center>
+                                                <![endif]-->
+                                                <a href="#" style="-ms-text-size-adjust: 100%; background-color: #004E4A; border-radius: 50px; color: #ffffff; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 52px; text-align: center; text-decoration: none; width: 257px; -webkit-text-size-adjust: none;">Follow
+                                                    your order <img style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; padding-left: 10px; padding-top: 10px;" src="https://i.ibb.co/NS5mdT2/Arrow-1-1.png" alt="Arrow"></a>
+                                                <!--[if mso]>
+                                                  </center>
+                                                </v:roundrect>
+                                              <![endif]-->
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <!-- Button : END -->
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Block 2 : END -->
+
+            <!-- 2 Even Columns : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; padding-left: 45px; padding-top: 0px; padding-bottom: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <!-- Column : BEGIN -->
+                            <th valign="top" width="50%" class="stack-column-center" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-weight: normal;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 0px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="center-on-narrow" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding-bottom: 12px;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 32px;">Delivery address</b>
+                                            </p>
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; color: #706A92;">Anna van Buerenplein 97<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                2595DB ‘s-Gravenhage
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <th valign="top" width="50%" class="stack-column-center" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-weight: normal;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 0px; text-align: left; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="center-on-narrow" align="left">
+                                            <p class="mobilepaddingtop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; padding-bottom: 12px;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 16px; line-height: 32px;">Carrier</b>
+                                            </p>
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; color: #706A92;">UPS
+                                                Ground Standar<br style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                                Carrier Services
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- Column : END -->
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 2 Even Columns : END -->
+
+            <!-- 3 Even Columns : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="5%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">&nbsp;</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="90%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: center; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 24px; background-color: #F2F2F7; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="center" bgcolor="#F2F2F7">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">Don't forget to activate your warranty on <a href="#" target="_blank" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #29142E;">keter.com/activate</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="5%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">&nbsp;</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 3 Even Columns : END -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: center; background-color: #ffffff; width: 600px; height: 42px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="600" height="42" align="center" bgcolor="#ffffff">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;">&nbsp;</p>
+                </td>
+            </tr>
+            <!-- 3 Even Columns : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; padding-bottom: 46px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="5%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">&nbsp;</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="90%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: Trebuchet MS, sans-serif; font-size: 16px; line-height: 24px; color: #29142E; padding: 24px; background-color: #ffffff; border: 1px solid #e7e5e8; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left" bgcolor="#ffffff">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Getting ready for your delivery:</b>
+                                            </p>
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">If you have ordered a larger item, please be sure to be prepared. For more information, please visit <a href="#" target="_blank" style="text-decoration: underline; color: #29142E;">keter.com/delivery-large-items</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="5%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">&nbsp;</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 3 Even Columns : END -->
+            <!-- Block 3 : BEGIN -->
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: left; background-color: #004E4A; color: #ffffff; padding-left: 40px; padding-top: 40px; font-size: 36px; line-height: 44px; font-family: Trebuchet MS, sans-serif; padding-bottom: 32px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left" bgcolor="#004E4A">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;"><b style="font-size: 36px; line-height: 44px; font-family: Trebuchet MS, sans-serif;">Do you need help?</b></p>
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: center; background-color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="center" bgcolor="#004E4A">
+                    <hr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 85%; background-color: #ffffff; opacity: 0.08; margin: 0px; margin-left: 30px;">
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#004E4A">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td border="0" valign="top" width="70%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 10px; padding-bottom: 12px; padding-left: 40px; font-size: 16px; line-height: 32px; font-family: Trebuchet MS, sans-serif; color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none; color: #ffffff;">Frequently
+                                                    asked questions</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td border="0" valign="top" width="30%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; font-family: Trebuchet MS, sans-serif; font-size: 10px; line-height: 19px; color: #555555; padding: 0px; padding-top: 40px; padding-right: 40px; padding-bottom: 16px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <img src="https://i.ibb.co/92QXrFV/Rightarrow.png" alt="Arrow" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: center; background-color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="center" bgcolor="#004E4A">
+                    <hr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 85%; background-color: #ffffff; opacity: 0.08; margin: 0px; margin-left: 30px;">
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#004E4A">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="70%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 10px; padding-bottom: 12px; padding-left: 40px; font-size: 16px; line-height: 32px; font-family: Trebuchet MS, sans-serif; color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none; color: #ffffff;">Browse our
+                                                    latest collection</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="30%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; font-family: Trebuchet MS, sans-serif; font-size: 10px; line-height: 19px; color: #555555; padding: 0px; padding-top: 40px; padding-right: 40px; padding-bottom: 16px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <img src="https://i.ibb.co/92QXrFV/Rightarrow.png" alt="Arrow" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: center; background-color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="center" bgcolor="#004E4A">
+                    <hr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 85%; background-color: #ffffff; opacity: 0.08; margin: 0px; margin-left: 30px;">
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: left; background-color: #004E4A; color: #ffffff; padding-left: 40px; padding-top: 40px; font-size: 16px; line-height: 24px; font-family: Trebuchet MS, sans-serif; padding-bottom: 32px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left" bgcolor="#004E4A">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px; padding: 0px; padding-bottom: 12px;"><img src="https://i.ibb.co/88fk1KN/Vector-Stroke.png" alt="1" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"> &nbsp;Free delivery over €50</p>
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px; padding: 0px; padding-bottom: 12px;"><img src="https://i.ibb.co/88fk1KN/Vector-Stroke.png" alt="1" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"> &nbsp;Free gift of €50</p>
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px; padding: 0px; padding-bottom: 12px;"><img src="https://i.ibb.co/88fk1KN/Vector-Stroke.png" alt="1" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"> &nbsp;30 days free returns</p>
+                </td>
+            </tr>
+            <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-bottom: 0px; margin: 0px;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; text-align: right; background-color: #004E4A; color: #ffffff; padding-top: 40px; padding-bottom: 0px; margin: 0px; vertical-align: bottom; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right" bgcolor="#004E4A" valign="bottom">
+                    <img style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; padding-bottom: 0px; margin: 0px; vertical-align: bottom;" src="https://i.ibb.co/PTshP6L/Logo-2.png" alt="Logo 1">
+                </td>
+            </tr>
+            <!-- Block 3 : END -->
+
+            <!-- Block 4 Desktop : BEGIN -->
+            <tr class="hidemobile" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="35%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 14px; padding-left: 40px; font-size: 14px; line-height: 24px; font-family: Trebuchet MS, sans-serif; color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Copyright 2022 © KETER</b></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="20%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; padding: 0px; padding-top: 14px; padding-left: 40px; font-size: 14px; line-height: 24px; font-family: Trebuchet MS, sans-serif; color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #004E4A;">Privacy
+                                                    Policy</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="25%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 14px; padding-left: 40px; font-size: 14px; line-height: 24px; font-family: Trebuchet MS, sans-serif; color: #004E4A; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #004E4A;">Terms and
+                                                    Conditions</a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="hidemobile" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding-bottom: 0px;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; width: 50%; padding: 0px; text-align: right; background-color: #ffffff; color: #ffffff; padding-top: 19px; padding-bottom: 8px; margin: 0px; padding-right: 19px; max-width: 100px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="50%" align="right" bgcolor="#ffffff">
+                    <img src="https://i.ibb.co/HdPKrwM/Logo1.png" width="100" height="auto" alt="Logo" border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100px; max-width: 100px; background: #ffffff;">
+                </td>
+            </tr>
+            <tr class="hidemobile" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="40%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 0px; padding-bottom: 20px; padding-left: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/RCzBvdG/Facebook.png" alt="FB" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/c8Tv96N/Youtube.png" alt="YT" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/ZTXwVXH/Linkedin.png" alt="LI" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/tXy1hd7/IG.png" alt="IG" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="60%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; font-family: Trebuchet MS, sans-serif; font-size: 10px; line-height: 19px; color: #555555; padding: 0px; padding-top: 8px; padding-right: 21px; padding-bottom: 30px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0;">Keter US Inc., 901 Yamato Road #180, Boca Raton, FL
+                                                33431, US
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Block 4 Desktop : END -->
+
+            <!-- Block 4 Mobile : BEGIN -->
+            <!--[if !mso]><!-->
+            <tr class="hidedesktop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 14px; padding-left: 40px; font-size: 14px; line-height: 24px; font-family: Trebuchet MS, sans-serif; color: #004E4A; padding-bottom: 25px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><b style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">Copyright 2022 © KETER</b></p>
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #004E4A;">Privacy
+                            Policy</a></p>
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: underline; color: #004E4A;">Terms and
+                            Conditions</a></p>
+                </td>
+            </tr>
+            <tr class="hidedesktop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; padding: 0px; background-color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" bgcolor="#ffffff">
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                        <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                            <td valign="top" width="70%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; padding: 0px; padding-top: 0px; padding-bottom: 20px; padding-left: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="left">
+                                            <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0px;"><a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/RCzBvdG/Facebook.png" alt="FB" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/c8Tv96N/Youtube.png" alt="YT" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/ZTXwVXH/Linkedin.png" alt="LI" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-decoration: none;"><img src="https://i.ibb.co/tXy1hd7/IG.png" alt="IG" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic;"></a></p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td valign="top" width="30%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0; border-collapse: collapse; table-layout: fixed; margin: 0 auto;">
+                                    <tr style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                                        <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: right; font-family: Trebuchet MS, sans-serif; font-size: 12px; line-height: 19px; color: #555555; padding: 0px; padding-top: 0px; padding-right: 40px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" align="right">
+                                            <img src="https://i.ibb.co/HdPKrwM/Logo1.png" width="100px" height="auto" alt="Logo" border="0" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -ms-interpolation-mode: bicubic; width: 100%; max-width: 100px; background: #ffffff;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="hidedesktop" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
+                <td style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; text-align: left; font-family: Trebuchet MS, sans-serif; line-height: 19px; color: #555555; padding: 0px; padding-top: 12px; padding-left: 40px; padding-bottom: 7px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-size: 8px;" align="left">
+                    <p style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; margin: 0; text-align: left; font-family: Trebuchet MS, sans-serif; line-height: 19px; font-size: 12px;">
+                        Keter US Inc., 901 Yamato Road #180, Boca Raton, FL
+                        33431, US
+                    </p>
+                </td>
+            </tr>
+            <!--<![endif]-->
+            <!-- Block 4 Mobile : END -->
+        </table>
+        <!-- Email Body : END -->
+
+        <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+
+</html>
